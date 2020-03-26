@@ -1,0 +1,18 @@
+$grey: #4a4a4a;
+$lightgrey: #f6f6f6;
+$white: #ffffff;
+$primary: #830000;
+$black: #000000;
+
+%message-shared {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
+
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}

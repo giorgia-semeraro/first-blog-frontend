@@ -1,0 +1,30 @@
+// main style //
+
+body{
+    background-color: $white;
+}
+
+
+h1{
+    @extend %message-shared;
+}
+
+h2{
+    @extend %message-shared;
+    color: yellow;
+}
+   
+
+  .box { 
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    @include transform(rotate(30deg));
+}
+
+@include media-breakpoint-up(lg) {
+    body{
+        background-color: grey;
+    }
+}
+
