@@ -1,30 +1,35 @@
-// main style //
 
-body{
-    background-color: $white;
+.section{
+    padding-top:2rem;
+    padding-bottom:2rem;
+    @include media-breakpoint-up(md) {
+        padding-top:3rem;
+        padding-bottom:3rem;
+    }
 }
-
-
-h1{
-    @extend %message-shared;
-}
-
-h2{
-    @extend %message-shared;
-    color: yellow;
-}
-   
-
-  .box { 
-    background-color: red;
-    width: 50px;
-    height: 50px;
-    @include transform(rotate(30deg));
-}
-
-@include media-breakpoint-up(lg) {
-    body{
-        background-color: grey;
+.page-hero{
+    .page-hero-content{
+        min-height:336px;
     }
 }
 
+
+
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-up(sm) { 
+
+}
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) { 
+
+}
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) { 
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@include media-breakpoint-up(xl) { 
+
+}
