@@ -9897,6 +9897,13 @@ html {
 /****************
   Fonts Import
 *****************/
+.btn-in-opacity {
+  opacity: 0.8;
+}
+.btn-in-opacity:hover {
+  opacity: 1;
+}
+
 .section {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -9908,8 +9915,28 @@ html {
   }
 }
 
+.page-hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.page-hero:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./../../assets/images/pattern-hero.png);
+}
 .page-hero .page-hero-content {
   min-height: 336px;
+}
+
+.shadow {
+  box-shadow: 0px 3px 15px -2px rgba(0, 0, 0, 0.75);
 }
 
 /*# sourceMappingURL=main.css.map */
